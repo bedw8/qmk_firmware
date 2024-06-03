@@ -16,6 +16,19 @@
 
 #pragma once
 
+/* Caps Word */
+#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+
+/* Auto Shift */
+#define NO_AUTO_SHIFT_ALPHA
+#define AUTO_SHIFT_REPEAT
+
+/* Disable Music mode */
+#define NO_MUSIC_MODE
+
+/* Up to 8 layer */
+#define LAYER_STATE_8BIT
+
 /* Turn off effects when suspended */
 #define RGB_DISABLE_WHEN_USB_SUSPENDED
 #define LED_DISABLE_WHEN_USB_SUSPENDED
@@ -35,6 +48,7 @@
 #define I2C1_TIMINGR_SDADEL 0U
 #define I2C1_TIMINGR_SCLH 15U
 #define I2C1_TIMINGR_SCLL 51U
+
 
 #ifdef KC_BLUETOOTH_ENABLE
 /* Hardware configuration */
@@ -87,4 +101,8 @@
 #define DYNAMIC_KEYMAP_EEPROM_MAX_ADDR 2047
 
 /* Factory test keys */
-#define FN_KEY1 MO(4)
+#define FN_KEY1 TT(3)
+
+
+#define TAPPING_TOGGLE 4
+
